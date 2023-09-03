@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect} from "react";
+import { styled } from "styled-components";
+import {ThemeProvider} from "styled-components";
+import Header from "./Components/Header";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Portfolio from "./Components/Portfolio";
+import Nav from "./Components/Nav";
+import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
+import Testimonial from "./Components/Testimonial";
+import Services from "./Components/Services";
+import { GlobalStyle } from "./GlobalStyle";
 
-function App() {
+const App = () => {
+  const theme = {
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Wrapper>
+        <GlobalStyle/>
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </Wrapper>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
+
+const Wrapper = styled.div`
+width: 100%;
+height: 100%;
+background: linear-gradient(#000000, #130F40);
+`;
