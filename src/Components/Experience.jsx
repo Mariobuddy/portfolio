@@ -42,7 +42,7 @@ const Experience = () => {
 
 export default Experience;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: fit-content;
   color: #ffffff;
   padding-top: 8rem;

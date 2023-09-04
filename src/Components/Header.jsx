@@ -34,7 +34,7 @@ const Header = () => {
 
 export default Header;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: 74rem;
   display: flex;
   flex-direction: column;

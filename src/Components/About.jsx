@@ -64,10 +64,11 @@ const About = () => {
 
 export default About;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: fit-content;
   color: #ffffff;
   padding-top: 8rem;
+  margin-bottom: 1rem;
 
   .p1 {
     font-size: 1.4rem;

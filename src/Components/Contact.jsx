@@ -111,7 +111,7 @@ const Button = styled.button`
 `;
 
 const Wrapper = styled.div`
-  height: 100%;
+  height: fit-content;
   padding: 8rem;
   width: 100%;
   color: #ffffff;
