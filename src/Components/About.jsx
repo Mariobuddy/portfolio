@@ -106,7 +106,6 @@ const Wrapper = styled.div`
         height: 38rem;
         border-radius: 2rem;
         transform: rotate(6deg);
-        cursor: pointer;
         z-index: 8;
         transition: all 0.2s ease;
 

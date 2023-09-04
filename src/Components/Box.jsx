@@ -26,7 +26,6 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 2rem 0rem;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
 
 
   .info {

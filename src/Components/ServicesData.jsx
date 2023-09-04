@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 import { AiOutlineCheck } from "react-icons/ai";
 
 const ServicesData = ({ data, head }) => {
-  console.log(data);
   return (
     <Wrapper>
       <div className="innerDiv">
@@ -34,7 +33,6 @@ const Wrapper = styled.div`
   border-bottom-right-radius: 2rem;
   background-color: #0a114d;
   transition: all 0.2s ease-out;
-  cursor: pointer;
 
   .innerDiv {
     background-color: #0e81d9;
@@ -76,5 +74,6 @@ const Wrapper = styled.div`
 
   &:hover{
     background-color: transparent;
+    box-shadow: 2px 2px 12px 8px #4a4747;
   }
 `;

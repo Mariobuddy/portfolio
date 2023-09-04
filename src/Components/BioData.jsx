@@ -36,7 +36,6 @@ const Button1 = styled.button`
   border: 2px solid #0e81d9;
   padding: 1rem 1.2rem;
   border-radius: 0.2rem;
-  cursor: pointer;
   margin-left: 4rem;
   transition: all 0.2s ease;
   &:hover ${Anch1} {

@@ -58,7 +58,6 @@ const Wrapper = styled.div`
       background-color: #0a114d;
       border-radius: 2rem;
       padding: 5rem 5rem 4rem 5rem;
-      cursor: pointer;
       transition: all 0.2s ease-in-out;
 
       .pImage {
@@ -72,7 +71,7 @@ const Wrapper = styled.div`
       }
 
       &:hover {
-        padding: 5.5rem 5.5rem 4.5rem 5.5rem;
+        padding: 5.2rem 5.2rem 4.2rem 5.2rem;
         box-shadow: 2px 2px 8px 4px #4a4747;
         background-color: #172393;
       }

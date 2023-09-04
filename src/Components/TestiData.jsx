@@ -1,42 +1,78 @@
-import React from 'react'
-import { styled } from 'styled-components';
-import Sagar from '../assests/L1.jpg';
+import React from "react";
+import { styled } from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css";
 
-const TestiData = () => {
+const TestiData = ({ data }) => {
   return (
     <Wrapper>
-    <img src={Sagar} alt='Rohit'></img>
-    <h5>Sagar Kushwaha</h5>
-    <p>"Your exceptional web development skills have transformed our digital presence and significantly contributed to our success. Your ability to take our ideas and turn them into functional, beautiful websites is truly remarkable. </p>
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={5}
+        slidesPerView={1}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        className="main"
+      >
+        {data.map((val, i) => {
+          return (
+            <SwiperSlide className="innerDiv" key={i}>
+              <img src={val.image} alt="pic"></img>
+              <h5>{val.name}</h5>
+              <p>{val.data}</p>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default TestiData;
 
-const Wrapper=styled.div`
-width: 60rem;
-height: 30rem;
-background-color: #3309eeb5;
-border-radius: 2rem;
-margin-top: 5rem;
-display: flex;
-flex-direction: column;
-align-items: center;
+const Wrapper = styled.div`
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background-color: #ffffff;
+  }
 
-img{
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  border: 5px solid #0e81d9;
-}
+  .main {
+    width: 60rem;
+    padding-bottom: 5rem;
+    .innerDiv {
+      width: 60rem;
+      height: 30rem;
+      background-color: #3309eeb5;
+      border-radius: 2rem;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6rem 0rem;
 
-h5{
-font-size: 1.6rem;
-}
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 5px solid #0e81d9;
+      }
 
-p{
-font-size: 1.2rem;
-}
+      h5 {
+        font-size: 1.6rem;
+      }
 
+      p {
+        font-size: 1.2rem;
+        width: 60%;
+      }
+    }
+  }
 `;

@@ -34,7 +34,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 
   h5 {
     text-align: center;

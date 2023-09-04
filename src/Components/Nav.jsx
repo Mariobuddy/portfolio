@@ -63,6 +63,7 @@ export default Nav;
 
 const Wrapper = styled.div`
   position: fixed;
+  z-index: 9999;
   width: 28rem;
   height: 5rem;
   bottom: 3rem;
