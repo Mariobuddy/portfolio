@@ -9,7 +9,7 @@ const Footer = () => {
       <h4>Rohit Bhatt</h4>
       <div className="logos">
         <div className="l1">
-          <a href="rf">
+          <a href="https://www.instagram.com/https_rohit18/">
             <AiOutlineInstagram className="logo" />
           </a>
         </div>
@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="l1">
-          <a href="g">
+          <a href="https://www.facebook.com/profile.php?id=100006754845267">
             <FaFacebook className="logo" />
           </a>
         </div>
