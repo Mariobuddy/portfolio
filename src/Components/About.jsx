@@ -5,6 +5,7 @@ import Box from "./Box";
 import { AiFillFolderOpen } from "react-icons/ai";
 import { FaMedal } from "react-icons/fa";
 import { MdComputer } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -52,9 +53,9 @@ const About = () => {
               like to know more about me, reach out to me on
               rohitbuatt9755@gmail.com
             </p>
-            <Button>
-              <Anch1 href="#contact">Let's Talk</Anch1>
-            </Button>
+            <Link to="contact" spy={true} smooth={true}>
+              <Button>Let's Talk</Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -133,14 +134,11 @@ const Wrapper = styled.section`
   }
 `;
 
-const Anch1 = styled.a`
-  color: #ffffff;
-`;
-
 const Button = styled.button`
   background-color: #0e81d9;
   border: 2px solid #0e81d9;
   outline: none;
+  color: #ffffff;
   margin-top: 2rem;
   padding: 1rem 1.2rem;
   border-radius: 0.2rem;
@@ -149,9 +147,6 @@ const Button = styled.button`
 
   &:hover {
     background-color: transparent;
-  }
-
-  &:hover ${Anch1} {
-    color: #0e81d9;
+    color: "#0e81d9";
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import CV from "../assests/CV.pdf";
+import { Link } from "react-scroll";
 
 const BioData = () => {
   return (
@@ -10,9 +11,9 @@ const BioData = () => {
           Download CV
         </Anch>
       </Button>
-      <Button1>
-        <Anch1 href="#contact">Let's Talk</Anch1>
-      </Button1>
+      <Link to="contact" spy={true} smooth={true}>
+        <Button1>Let's Talk</Button1>
+      </Link>
     </Wrapper>
   );
 };
@@ -25,10 +26,6 @@ const Anch = styled.a`
   color: #0e81d9;
 `;
 
-const Anch1 = styled.a`
-  color: #ffffff;
-`;
-
 const Button1 = styled.button`
   background-color: #0e81d9;
   outline: none;
@@ -38,11 +35,11 @@ const Button1 = styled.button`
   border-radius: 0.2rem;
   margin-left: 4rem;
   transition: all 0.2s ease;
-  &:hover ${Anch1} {
-    color: #0e81d9;
-  }
+  color: #ffffff;
+  cursor: pointer;
   &:hover {
     background-color: transparent;
+    color: #0e81d9;
   }
 `;
 
