@@ -1,6 +1,6 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { styled } from "styled-components";
-import {ThemeProvider} from "styled-components";
+import { ThemeProvider } from "styled-components";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -11,17 +11,18 @@ import Footer from "./Components/Footer";
 import Testimonial from "./Components/Testimonial";
 import Services from "./Components/Services";
 import { GlobalStyle } from "./GlobalStyle";
+import * as Scroll from "react-scroll";
 
 const App = () => {
-  const theme = {
-  };
+  var scroll = Scroll.animateScroll;
+  const theme = {};
   useEffect(() => {
-    window.scrollTo(0, 0);
-}, []);
+    scroll.scrollToTop();
+  }, [scroll]);
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
-        <GlobalStyle/>
+        <GlobalStyle />
         <Header />
         <Nav />
         <About />
@@ -39,7 +40,7 @@ const App = () => {
 export default App;
 
 const Wrapper = styled.div`
-width: 100%;
-height: 100%;
-background: linear-gradient(#000000, #130F40);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000000, #130f40);
 `;

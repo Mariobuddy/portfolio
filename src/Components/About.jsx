@@ -68,8 +68,8 @@ export default About;
 const Wrapper = styled.section`
   height: fit-content;
   color: #ffffff;
-  padding-top: 8rem;
-  margin-bottom: 1rem;
+  margin: 5rem 0rem;
+  padding: 4rem 0rem;
 
   .p1 {
     font-size: 1.4rem;

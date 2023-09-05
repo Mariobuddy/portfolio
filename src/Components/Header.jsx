@@ -41,6 +41,7 @@ const Wrapper = styled.section`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-bottom: 9rem;
 
   .container {
     margin-top: 10rem;

@@ -110,14 +110,15 @@ const Button = styled.button`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: fit-content;
-  padding: 8rem;
   width: 100%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem 0rem;
+  padding: 4rem 0rem;
 
   .p1 {
     font-size: 1.4rem;

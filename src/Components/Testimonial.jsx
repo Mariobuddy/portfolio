@@ -35,13 +35,15 @@ const Testimonial = () => {
 
 export default Testimonial;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   height: fit-content;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid transparent;
+  margin: 5rem 0rem;
+  padding: 4rem 0rem;
+
   .p1 {
     font-size: 1.4rem;
     text-align: center;

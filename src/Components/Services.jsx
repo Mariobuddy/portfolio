@@ -47,10 +47,11 @@ export default Services;
 const Wrapper = styled.section`
   height: fit-content;
   color: #ffffff;
-  padding-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem 0rem;
+  padding: 4rem 0rem;
 
   .p1 {
     font-size: 1.4rem;
