@@ -46,4 +46,38 @@ const Wrapper = styled.div`
   &:hover{
     background-color: #162399;
   }
+
+    @media(min-width:390px) and (max-width:768px){
+    background-color: #0a114d;
+  border-radius: 2rem;
+  height: 16rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0rem;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 4rem;
+
+
+  .info {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    h6 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 2rem;
+      color: #cec9c9;
+    }
+  }
+  &:hover{
+    background-color: #162399;
+  }
+  }
 `;

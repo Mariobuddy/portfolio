@@ -56,7 +56,7 @@ const Wrapper = styled.div`
 
       .logo {
         font-size: 1.5rem;
-        margin: 0.5rem 1rem 0rem 6rem;
+        margin: 0rem 1rem 0rem 6rem;
       }
 
       .valDiv {
@@ -76,5 +76,43 @@ const Wrapper = styled.div`
 
   &:hover {
     box-shadow: 2px 2px 12px 8px #4a4747;
+  }
+  @media (min-width: 390px) and (max-width: 768px) {
+    width: 90vw;
+    height: inherit;
+    margin-bottom: 4rem;
+
+    h5 {
+    }
+    .container1 {
+      margin-top: 4rem;
+      width: 60vw;
+      padding-right: 0rem;
+
+      .innerDiv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        .logo {
+          font-size: 1.2rem;
+          margin: 0.5rem 1rem 0rem 6rem;
+        }
+
+        .valDiv {
+          margin-bottom: 2rem;
+          .pone {
+            font-size: 1.4rem;
+            margin-right: 5rem;
+            margin-bottom: 0rem;
+          }
+          .ptwo {
+            font-size: 1rem;
+            margin-right: 5rem;
+            color: #beb5b5;
+          }
+        }
+      }
+    }
   }
 `;

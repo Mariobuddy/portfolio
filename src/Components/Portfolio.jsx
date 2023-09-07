@@ -78,4 +78,35 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    .p1 {
+    }
+
+    .h51 {
+    }
+
+    .project {
+      flex-direction: column;
+      .main {
+        border-radius: 2rem;
+        padding: 2rem 2rem 1rem 2rem;
+        transition: all 0.2s ease-in-out;
+        width: 90vw;
+        height: 34rem;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .pImage {
+          height: 25rem;
+          width: 30rem;
+        }
+        p {
+        }
+      }
+    }
+  }
 `;

@@ -36,7 +36,7 @@ const About = () => {
             />
           </div>
           <div className="info">
-            <p>
+            <p className="para">
               Since childhood, I have seen various inventions in technology and
               tools which triggered my curiosity to learn more about tech and
               how their application works in the real world. While I was a
@@ -132,6 +132,60 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    border: 2px solid transparent;
+
+    .p1 {
+    }
+
+    .h51 {
+    }
+
+    .logo {
+    }
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .img1 {
+        .bg {
+          width: 28rem;
+          height: 28rem;
+        }
+        img {
+          width: 28rem;
+          height: 28rem;
+          margin-bottom: 6rem;
+        }
+      }
+      .detail {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box {
+          width: inherit;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+        }
+        .info {
+          p {
+          }
+          .para {
+            width: inherit;
+            padding: 0rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
 `;
 
 const Button = styled.button`
@@ -148,5 +202,8 @@ const Button = styled.button`
   &:hover {
     background-color: transparent;
     color: "#0e81d9";
+  }
+  @media (min-width: 390px) and (max-width: 768px) {
+    margin-left: 0.2rem;
   }
 `;

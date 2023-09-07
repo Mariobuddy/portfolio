@@ -72,8 +72,12 @@ const Wrapper = styled.div`
     }
   }
 
-  &:hover{
+  &:hover {
     background-color: transparent;
     box-shadow: 2px 2px 12px 8px #4a4747;
+  }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    margin-bottom: 4rem;
   }
 `;

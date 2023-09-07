@@ -75,4 +75,28 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (min-width: 390px) and (max-width: 768px) {
+    .main {
+      width: 90vw;
+      .innerDiv {
+        width: inherit;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 0rem;
+
+        img {
+        }
+
+        h5 {
+        }
+
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
 `;

@@ -104,4 +104,15 @@ const Wrapper = styled.section`
     right: 5rem;
     font-size: 1.5rem;
   }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    .scroll {
+      right: -2rem;
+    }
+
+    .social {
+      left: 0.5rem;
+      top: 4rem;
+    }
+  }
 `;

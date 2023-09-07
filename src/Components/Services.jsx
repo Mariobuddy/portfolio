@@ -69,4 +69,10 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-around;
   }
+  @media (min-width: 390px) and (max-width: 768px) {
+    .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  }
 `;

@@ -86,4 +86,9 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (min-width: 390px) and (max-width: 768px) {
+    position: fixed;
+    bottom: 3rem;
+    left: 5.5rem;
+  }
 `;

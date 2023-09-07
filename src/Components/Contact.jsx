@@ -180,4 +180,40 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    margin: 0rem 0rem;
+
+    .p1 {
+    }
+
+    .h51 {
+    }
+
+    .mainDiv {
+      flex-direction: column;
+
+      .fDiv {
+      }
+
+      .sDiv {
+        margin-top: 4rem;
+        form {
+          flex-direction: column;
+          height: inherit;
+          align-items: center;
+          justify-content: center;
+
+          .inp {
+            width: 80vw;
+            padding: 1.5rem 2rem;
+          }
+          .inp2 {
+            width: 90vw;
+            padding: 1.5rem 2rem;
+          }
+        }
+      }
+    }
+  }
 `;

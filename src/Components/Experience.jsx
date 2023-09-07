@@ -85,4 +85,13 @@ const Wrapper = styled.section`
       box-shadow: 2px 2px 8px 4px #4a4747;
     }
   }
+
+  @media (min-width: 390px) and (max-width: 768px) {
+    border: 2px solid transparent;
+    .container {
+      width: fit-content;
+      height: fit-content;
+      flex-direction: column;
+    }
+  }
 `;
