@@ -7,6 +7,9 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
+  const form1 = useRef();
+  const form2 = useRef();
+  const form3 = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,6 +25,9 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          form1.current.value = "";
+          form2.current.value = "";
+          form3.current.value = "";
         },
         (error) => {
           console.log(error.text);
@@ -65,6 +71,7 @@ const Contact = () => {
               type="text"
               name="name"
               autoComplete="off"
+              ref={form1}
             ></input>
             <input
               className="inp"
@@ -72,6 +79,7 @@ const Contact = () => {
               type="text"
               name="email"
               autoComplete="off"
+              ref={form2}
             ></input>
             <textarea
               className="inp2"
@@ -80,6 +88,7 @@ const Contact = () => {
               rows={"10"}
               name="message"
               autoComplete="off"
+              ref={form3}
             ></textarea>
             <Button type="submit" onClick={sendEmail}>
               Send Message
